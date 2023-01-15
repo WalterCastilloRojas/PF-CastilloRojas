@@ -339,6 +339,7 @@ a.logo {
     width: 98%;
   }
 }
+
 a.logo {
   text-align: center;
   margin-left: 25px;
@@ -353,11 +354,20 @@ a.logo {
 ANIMATIONS
 \*-----------------------------------*/
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-.title{
- animation: fadeIn 5s; }
+
+.title {
+  animation: fadeIn 3s;
+}
+
+
 
 /*-----------------------------------*\
   #MAIN
@@ -425,7 +435,7 @@ ANIMATIONS
   line-height: 0.9;
   text-align: center;
   -webkit-font-smoothing: antialiased;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 #main .second-container .second-column .descripcion {
@@ -433,7 +443,7 @@ ANIMATIONS
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
-  margin:0;
+  margin: 0;
 }
 
 #main .second-container .first-column .arrow {
@@ -547,27 +557,31 @@ ANIMATIONS
  #ACERCA-HOMEPAGE
 \*-----------------------------------*/
 #acerca .container {
-width:85%;
-margin:auto;
+  width: 85%;
+  margin: auto;
 }
+
 #acerca .container .first-column {
-  display:flex;
-  flex-direction:column;
-  gap:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 #acerca .container .first-column .acerca-description {
   font-size: calc(1.2vw + 0.9em) !important;
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
 }
+
 #acerca .container .full-description {
   font-size: calc(1.2vw + 0.9em) !important;
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
-  margin-block:20px;
+  margin-block: 20px;
 }
+
 #acerca .imagen-acerca {
   width: 95%;
   height: auto;
@@ -583,55 +597,55 @@ margin:auto;
  #ACERCA-HOMEPAGE RESPONSIVE SINCE 992PX
 \*-----------------------------------*/
 @media (min-width: 992px) {
-#acerca {
-  padding: 1%;
-  width: 100%;
-  margin: auto;
+  #acerca {
+    padding: 1%;
+    width: 100%;
+    margin: auto;
 
-}
+  }
 
-#acerca .container {
+  #acerca .container {
 
-  width: 1200px;
-  max-width: 98%;
-  margin: auto;
+    width: 1200px;
+    max-width: 98%;
+    margin: auto;
 
-}
+  }
 
-#acerca .container .first-column {
-  display: flex;
-  flex-direction:row;
-  gap: 5%;
-}
+  #acerca .container .first-column {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
 
-#acerca .container .first-column .acerca-description {
-  font-size: 1.4em !important;
-  line-height: 1.6;
-  text-align: justify;
-  margin:0;
-  padding:0;
-}
+  #acerca .container .first-column .acerca-description {
+    font-size: 1.4em !important;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
 
-#acerca .container .full-description {
-  font-size: 1.4em!important;
-  line-height: 1.8;
-  padding-top: 2.5rem;
-  padding-bottom: 0rem;
-  text-align: justify;
-  text-transform: uppercase;
-  margin:0;
-  padding-block:10px;
-}
+  #acerca .container .full-description {
+    font-size: 1.4em !important;
+    line-height: 1.8;
+    padding-top: 2.5rem;
+    padding-bottom: 0rem;
+    text-align: justify;
+    text-transform: uppercase;
+    margin: 0;
+    padding-block: 10px;
+  }
 
-#acerca .imagen-acerca {
-  width: 420px;
-  height: 450px;
-  object-fit: cover;
-  background-position: top !important;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  #acerca .imagen-acerca {
+    width: 420px;
+    height: 450px;
+    object-fit: cover;
+    background-position: top !important;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -687,13 +701,13 @@ img {
   border-radius: 10px;
 }
 
- .about  .title{
-  font-size:calc(1.5vw + 2.3em) !important;
-  font-family:var(--fontFamily-PPMori600);
-  font-weight:400;
-  text-transform:uppercase;
-  text-align:center;
-  padding-block:30px;
+.about .title {
+  font-size: calc(1.5vw + 2.3em) !important;
+  font-family: var(--fontFamily-PPMori600);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-block: 30px;
 }
 
 #about .btn__about {
@@ -760,23 +774,26 @@ img {
   gap: 20px;
 }
 
-.portfolio  .title{
-  font-size:calc(1.5vw + 2.3em) !important;
-  font-family:var(--fontFamily-PPMori600);
-  font-weight:400;
-  text-transform:uppercase;
-  text-align:center;
-  padding-block:30px;
+.portfolio .title {
+  font-size: calc(1.5vw + 2.3em) !important;
+  font-family: var(--fontFamily-PPMori600);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-block: 30px;
 }
-#portfolio img{
-  transition:all 1.1s;
+
+#portfolio img {
+  transition: all 1.1s;
 }
-#portfolio img:hover{
-  transform:scale(0.9);
+
+#portfolio img:hover {
+  transform: scale(0.9);
   opacity: 0.3;
-  cursor:pointer;
+  cursor: pointer;
 
 }
+
 #portfolio .btn__portfolio {
   background-color: black;
   text-transform: uppercase;
@@ -801,6 +818,7 @@ img {
     margin-top: 2rem;
   }
 }
+
 /*-----------------------------------*\
 #Servicios
 \*-----------------------------------*/
@@ -843,13 +861,13 @@ img {
   padding: 30px 15px;
 }
 
-.habilidades  .title{
-  font-size:calc(1.5vw + 2.3em) !important;
-  font-family:var(--fontFamily-PPMori600);
-  font-weight:400;
-  text-transform:uppercase;
-  text-align:center;
-  padding-block:30px;
+.habilidades .title {
+  font-size: calc(1.5vw + 2.3em) !important;
+  font-family: var(--fontFamily-PPMori600);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-block: 30px;
 }
 
 #habilidades .stroke {
@@ -943,13 +961,14 @@ img {
   padding-top: 2.5rem;
   padding-bottom: 3rem;
 }
-.contact .title{
-  font-size:calc(1.5vw + 2.3em) !important;
-  font-family:var(--fontFamily-PPMori600);
-  font-weight:400;
-  text-transform:uppercase;
-  text-align:center;
-  padding-block:30px;
+
+.contact .title {
+  font-size: calc(1.5vw + 2.3em) !important;
+  font-family: var(--fontFamily-PPMori600);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-block: 30px;
 }
 
 #contact .firstContainer__c {
