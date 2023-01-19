@@ -824,13 +824,15 @@ img {
 \*-----------------------------------*/
 #habilidades {
   width: 94%;
-  margin: auto;
+  max-width:98%;
+  margin: auto !important;
   padding-top: 0rem;
   padding-bottom: 3.5rem;
 }
 
 .firstContainer__h {
   width: 100%;
+  margin:auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -838,6 +840,7 @@ img {
 
 #habilidades .secondContainer__h {
   width: 100%;
+  margin:auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
